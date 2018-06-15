@@ -2,8 +2,9 @@ package forestgump.kotlin_playground.iservice;
 
 import forestgump.kotlin_playground.entity.Product;
 
-oneway interface ICallback {
+interface ICallback {
 
-    void addedItemId(long id);
-    void isItemDeleted(boolean isDeleted);
+   oneway void addedItemId(long id);
+   oneway void isItemDeleted(boolean isDeleted);
+
 }
